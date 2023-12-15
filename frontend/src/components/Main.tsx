@@ -37,7 +37,7 @@ export const Main = () => {
           </ul>
         </div>
         <div className="mt-5 ">
-          <video className="h-full md:h-auto -z-10" autoPlay loop muted>
+          <video className="-z-10" autoPlay loop muted>
             <source src={'/video/image.mp4'} type="video/mp4" />
           </video>
         </div>
