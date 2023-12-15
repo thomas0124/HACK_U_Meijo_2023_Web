@@ -1,9 +1,9 @@
 'use client'
 
 import { useSession } from 'next-auth/react'
+import Image from 'next/image'
 import { LoginButton, LogoutButton } from '@/components/buttons'
 import { Main } from '@/components/Main'
-import { Footer } from '@/components/Footer'
 import { NextAuthProvider } from '@/app/providers'
 
 export default function Home() {
@@ -11,7 +11,6 @@ export default function Home() {
     <NextAuthProvider>
       <ClientHome />
       <Main />
-      <Footer />
     </NextAuthProvider>
   )
 }
@@ -21,9 +20,9 @@ function ClientHome() {
   const user = session?.user
 
   return (
-    <header className="text-2xl md:text-4xl flex shrink-0 h-16 px-4 pt-2  justify-between items-center">
-      <div className="not-italic font-serif leading-normal text-white">ADvertEX</div>
-      <div className="not-italic form-normal leading-normal text-white font-serif">
+    <header className="text-2xl md:text-4xl flex shrink-0 h-16 justify-between items-center">
+      <Image src="/images/image_ad.png" width={240} height={60} alt="ADvertEX Logo" className="pt-9" />
+      <div className="not-italic form-normal leading-normal px-4 pt-2 text-white font-serif">
         {user ? <LogoutButton /> : <LoginButton />}
       </div>
     </header>
