@@ -17,7 +17,7 @@ export const AnimatedText = ({ text }: { text: string }) => {
     return () => clearInterval(interval)
   }, [text])
 
-  return <span className="text-4xl font-serif">{displayedText}</span>
+  return <div className="text-xl md:text-5xl font-serif">{displayedText}</div>
 }
 
 export default AnimatedText
