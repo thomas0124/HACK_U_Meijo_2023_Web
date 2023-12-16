@@ -24,10 +24,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+      
       <meta property="twitter:title" content="ADvertEX" />
       <meta
         property="twitter:description"
         content="探索&発見バトルゲーム。 街中や地元、学校内にある広告を撮影して、自分だけのキャラクターを創り、戦う。"
+      />
+      <meta
+        property="twitter:image"
+        content="https://hack-u-meijo-2023-web.vercel.app/twitter-image.png"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@Tomas_engineer" />
