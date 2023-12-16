@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta property="og:site_name" content="ADvertEX" />
       <meta
         property="og:image"
-        content="https://hack-u-meijo-2023-web.vercel.app/opengraph-image.png/b1ef13998ce294a4"
+        content="https://hack-u-meijo-2023-web.vercel.app/opengraph-image.png"
       />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
