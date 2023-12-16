@@ -4,41 +4,22 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const siteName = 'ADvertEX'
-const description = 'hack u Meijo 2023 repository Web ver'
-const url = 'https://hack-u-meijo-2023-web.vercel.app/'
-
 export const metadata: Metadata = {
-  title: {
-    default: siteName,
-    template: `%s - ${siteName}`
-  },
-  description,
-  openGraph: {
-    title: siteName,
-    description,
-    url,
-    siteName,
-    locale: 'en_EN',
-    type: 'website'
-  },
-  twitter: {
-    card: `summary_large_image`,
-    title: siteName,
-    description,
-    creator: `@Tomas_engineer`
-  },
-  verification: {
-    google: 'https://www.google.com'
-  },
-  alternates: {
-    canonical: url
-  }
+  title: 'ADvertEX',
+  description: 'hack u Meijo 2023 repository Web ver'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="ADvertEX" />
+      <meta property="og:description" content="hack u Meijo 2023 repository Web ver" />
+
+      <meta property="og:url" content="https://hack-u-meijo-2023-web.vercel.app/" />
+      <meta property="og:image" content="favicon.ico" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@Tomas_engineer" />
       <body className={inter.className}>{children}</body>
     </html>
   )
