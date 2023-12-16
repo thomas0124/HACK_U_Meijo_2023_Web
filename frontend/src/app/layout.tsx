@@ -4,22 +4,35 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const title = 'ADvertEX'
+const description =
+  '探索&発見バトルゲーム。 街中や地元、学校内にある広告を撮影して、自分だけのキャラクターを創り、戦う。'
+const images = 'images/image_ad.png'
+const url = 'https://hack-u-meijo-2023-web.vercel.app/'
+const type = 'website'
+const locale = 'ja_JP'
+
 export const metadata: Metadata = {
-  title: 'ADvertEX',
-  description: 'hack u Meijo 2023 repository Web ver'
+  title,
+  description,
+  openGraph: {
+    type,
+    url,
+    title,
+    description,
+    images,
+    siteName: title,
+    locale
+  },
+  twitter: {
+    site: '@Tomas_engineer',
+    card: 'summary'
+  }
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content="ADvertEX" />
-      <meta property="og:description" content="hack u Meijo 2023 repository Web ver" />
-
-      <meta property="og:url" content="https://hack-u-meijo-2023-web.vercel.app/" />
-      <meta property="og:image" content="favicon.ico" />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@Tomas_engineer" />
       <body className={inter.className}>{children}</body>
     </html>
   )
