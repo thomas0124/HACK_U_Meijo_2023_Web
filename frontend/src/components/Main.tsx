@@ -10,7 +10,7 @@ export const Main = () => {
         <span className="text-white">↓</span>
       </div>
       <a
-        href="/download/HackU_v21.apk" // Replace with the actual path to your .apk file
+        href="/download/ADvertEX_bata6.apk" // Replace with the actual path to your .apk file
         download="AdvertEX.apk"
         className="text-white hover:underline flex items-center justify-center my-2"
       >
